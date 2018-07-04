@@ -1,4 +1,6 @@
 GitRepositoriesView.GitDirectories=/Users/mac/GitHub/example/chapter4-1/.git\:
-GitRepositoriesView.GitDirectories.relative=.git\:
+GitRepositoriesView.GitDirectories.relative=/Users/mac/GitHub/example/chapter4-1/.git\:
+RepositorySearchDialogDeepSearch=false
+RepositorySearchDialogSearchPath=/Users/mac/GitHub/JAVAHW/HW1
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1

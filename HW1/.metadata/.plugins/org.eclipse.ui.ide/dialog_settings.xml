@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/Users/mac/GitHub/JAVAHW/HW1"/>
 		<item value="/Users/mac/GitHub/example/chapter4-1"/>
 	</list>
 	<list key="installedFeatures">
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="org.aspectj:1.8.13.201803231521"/>
 		<item value="org.eclipse.ajdt:2.2.4.201803231521"/>
+		<item value="org.eclipse.buildship:2.2.1.v20180125-1441"/>
 		<item value="org.eclipse.cft.server.core.feature:1.2.3.v201709130027"/>
 		<item value="org.eclipse.cft.server.ui.feature:1.0.10.v201709130027"/>
 		<item value="org.eclipse.draw2d:3.10.100.201606061308"/>
