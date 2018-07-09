@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	type="text/css">
+<link rel="stylesheet" href="/css/theme.css" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler navbar-toggler-right" type="button"
+				data-toggle="collapse" data-target="#navbar3SupportedContent">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse text-center justify-content-center"
+				id="navbar3SupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link">Bootstrap 4</a></li>
+					<li class="nav-item"><a class="nav-link">HTML/SASS</a></li>
+				</ul>
+				<a class="ml-3 btn navbar-btn btn-primary" th:href="@{/landlord/register}">即刻注册</a>
+			</div>
+		</div>
+	</nav>
+	<div class="py-5 w-100 h-100"
+		style="background-image: url(&quot;/pic/p1.jpg&quot;);">
+		<div class="container">
+			<div class="row">
+				<div class="align-self-center col-md-6 text-white">
+					<h1 class="text-center text-md-left display-3">房东登录</h1>
+					<p class="lead">v0.0.0.1测试版</p>
+				</div>
+				<div class="col-md-6 h-100">
+					<div class="card">
+						<div class="card-body w-100 mx-auto p-5 h-75">
+							<h3 class="pb-3 w-100 mx-auto">登录</h3>
+							<form role="form" action="/landlord/login"
+								th:action="@{/landlord/login}" th:object="${user}" method="post"
+								th:method="post">
+								<div class="form-group">
+									<label
+										th:classappend="${#fields.hasErrors('phonenumber')}?'badge badge-danger'">电话</label>
+									<input class="form-control" id="phonenumber"
+										th:field="*{phonenumber}">
+								</div>
+								<div class="form-group">
+									<label for="password"
+										th:classappend="${#fields.hasErrors('password')}?'badge badge-danger'">密码</label>
+									<input type="password" class="form-control" id="password"
+										th:field="*{password}">
+								</div>
+								<button type="submit" class="btn mt-2 btn-outline-dark col-md-12">提交</button>
+								<a th:href="@{/}">
+									<button type="button"
+										class="btn mt-2 btn-outline-dark col-md-12">放弃登录</button>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>
